@@ -1,9 +1,15 @@
-import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { PropsWithChildren } from "react";
+import Head from "next/head";
+import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
+interface Props {
+  title?: string;
+  transparent?: boolean;
+}
 
-const Meta = () => {
+const Meta = (props: PropsWithChildren<Props>) => {
   return (
     <Head>
+      <title>{props.title}</title>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -38,7 +44,7 @@ const Meta = () => {
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
-  )
-}
+  );
+};
 
-export default Meta
+export default Meta;

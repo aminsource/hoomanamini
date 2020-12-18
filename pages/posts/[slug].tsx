@@ -2,9 +2,9 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
-import Header from "../../components/header";
+
 import PostHeader from "../../components/post-header";
-import Layout from "../../components/bloglayout";
+import Layout from "../../components/Layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
@@ -26,12 +26,11 @@ const Post = ({ post, preview }: Props) => {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-32 mt-20">
               <Head>
                 <title>
                   {post.title} | Next.js Blog Example with {CMS_NAME}

@@ -1,33 +1,29 @@
-import { PropsWithChildren } from 'react'
-import Head from 'next/head'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import { PropsWithChildren } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Meta from "./meta";
+// import Alert from "./alert";
 
 interface Props {
-  title?: string,
-  transparent?: boolean
+  title?: string;
+  transparent?: boolean;
+  preview?: boolean;
 }
 
 const Layout = (props: PropsWithChildren<Props>) => {
-
-
   return (
-
     <div>
-      <Head>
-        <title>{props.title}</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <Meta title={props.title} />
       <header>
-        <Navbar transparent={true} />
+        <Navbar transparent={false} />
       </header>
       <main>
+        {/* <Alert preview={false} /> */}
         {props.children}
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
