@@ -23,8 +23,7 @@ const Hero = () => (
     <div
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1558114965-eeb97aa84c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1404&q=80')",
+        backgroundImage: "url('/assets/landing/background.jpeg')",
       }}
     >
       <span
@@ -146,7 +145,7 @@ const Services = () => (
           <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600">
             <img
               alt="..."
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              src="/assets/landing/collaborate.jpeg"
               className="w-full align-middle rounded-t-lg"
             />
             <blockquote className="relative p-8 mb-4">
@@ -206,7 +205,7 @@ const Featured = () => (
           <img
             alt="..."
             className="max-w-full rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3l8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            src="/assets/landing/robot.jpeg"
           />
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
