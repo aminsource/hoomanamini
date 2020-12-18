@@ -8,11 +8,13 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
     "autoprefixer": "^10.1.0",
     "classnames": "2.2.6",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
     "next": "latest",
+    "next-images": "^1.6.0",
     "postcss": "^8.2.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
