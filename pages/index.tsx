@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-
+import Link from "next/link";
 const IndexPage = () => (
   <Layout title="مانا">
     <Hero />
@@ -73,28 +73,30 @@ const Hero = () => (
 const Services = () => (
   <section className="pb-20 bg-gray-300 -mt-24">
     <div className="container mx-auto px-4">
-      <div className="flex flex-wrap">
-        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-          <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-            <div className="px-4 py-5 flex-auto">
-              <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                <i className="fas fa-award"></i>
+      <div className="flex flex-wrap cursor-pointer">
+        <Link href="/blog">
+          <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className="px-4 py-5 flex-auto">
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <i className="fas fa-blog"></i>
+                </div>
+                <h6 className="text-xl font-semibold">وبلاگ</h6>
+                <p className="mt-2 mb-4 text-gray-600">
+                  ارایه گفتارهای تخصصی نشانه تخصص هر کسب و کاری می باشد و یکی از
+                  راه های حرفه ای جذب مشتری است که در بستر وبلاگ مانا ارایه می
+                  گردد.
+                </p>
               </div>
-              <h6 className="text-xl font-semibold">وبلاگ</h6>
-              <p className="mt-2 mb-4 text-gray-600">
-                ارایه گفتارهای تخصصی نشانه تخصص هر کسب و کاری می باشد و یکی از
-                راه های حرفه ای جذب مشتری است که در بستر وبلاگ مانا ارایه می
-                گردد.
-              </p>
             </div>
           </div>
-        </div>
+        </Link>
 
         <div className="w-full md:w-4/12 px-4 text-center">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                <i className="fas fa-retweet"></i>
+                <i className="fas fa-shopping-cart"></i>
               </div>
               <h6 className="text-xl font-semibold">فروشگاه اینترنتی</h6>
               <p className="mt-2 mb-4 text-gray-600">
@@ -109,7 +111,7 @@ const Services = () => (
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
             <div className="px-4 py-5 flex-auto">
               <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                <i className="fas fa-fingerprint"></i>
+                <i className="fa fa-users"></i>
               </div>
               <h6 className="text-xl font-semibold">
                 باشگاه و ارتباط با مشتریان
