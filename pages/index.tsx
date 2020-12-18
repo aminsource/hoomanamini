@@ -35,7 +35,7 @@ const Hero = () => (
     <div className="container relative mx-auto">
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <div className="pr-12">
+          <div>
             <h1 className="text-white font-semibold text-5xl">
               پروژه بستر تجارت الکترونیک مانا
             </h1>
@@ -140,7 +140,7 @@ const Services = () => (
           </a>
         </div>
 
-        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
+        <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-5">
           <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600">
             <img
               alt="..."
@@ -209,7 +209,7 @@ const Featured = () => (
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div className="md:pr-12">
-            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mt-6 mb-6 shadow-lg rounded-full bg-pink-300">
               <i className="fas fa-rocket text-xl"></i>
             </div>
             <h3 className="text-3xl font-semibold">تکنولوژی های پروژه</h3>
@@ -343,7 +343,7 @@ const Finisher = () => (
 
     <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
       <div className="flex flex-wrap text-center justify-center">
-        <div className="w-full lg:w-6/12 px-4">
+        <div className="w-full lg:w-6/12 px-4 mt-10">
           <h2 className="text-4xl font-semibold text-white">
             مشارکت و هم افزایی موتور توسعه
           </h2>

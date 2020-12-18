@@ -59,7 +59,7 @@ function Footer(): ReactElement {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
+                <span className="block uppercase text-gray-600 text-sm font-semibold mb-2 mt-5">
                   لینک های مفید
                 </span>
                 <ul className="list-unstyled">
@@ -97,7 +97,7 @@ function Footer(): ReactElement {
                   </li>
                 </ul>
               </div>
-              <div className="w-full lg:w-4/12 px-4">
+              <div className="w-full lg:w-4/12 px-4 mt-5">
                 <span className="block uppercase text-gray-600 text-sm font-semibold mb-2">
                   منابع دیگر
                 </span>
