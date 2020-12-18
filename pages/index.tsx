@@ -24,7 +24,7 @@ const Hero = () => (
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+          "url('https://images.unsplash.com/photo-1558114965-eeb97aa84c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1404&q=80')",
       }}
     >
       <span
@@ -292,24 +292,27 @@ const Team = () => (
                 ایجاد کننده و توسعه دهنده وب
               </p>
               <div className="mt-6">
-                <button
-                  className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
+                <a
+                  className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                  href="https://twitter.com/HoomanAmini"
+                  target="_blank"
                 >
                   <i className="fab fa-twitter"></i>
-                </button>
-                <button
-                  className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
+                </a>
+                <a
+                  className="bg-red-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                  href="https://www.youtube.com/c/hoomanamini"
+                  target="_blank"
                 >
-                  <i className="fab fa-facebook-f"></i>
-                </button>
-                <button
-                  className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                  type="button"
+                  <i className="fab fa-youtube"></i>
+                </a>
+                <a
+                  className="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                  href="https://github.com/aminsource"
+                  target="_blank"
                 >
-                  <i className="fab fa-dribbble"></i>
-                </button>
+                  <i className="fab fa-github"></i>
+                </a>
               </div>
             </div>
           </div>
