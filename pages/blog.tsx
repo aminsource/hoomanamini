@@ -57,15 +57,15 @@ export const getStaticProps = async () => {
 
 const Title = () => (
   <div
-    className="relative pt-5 pb-10 flex content-center items-center justify-center mb-10"
+    className="relative pt-15 pb-10 flex content-center items-center justify-center mb-10"
     style={{
-      minHeight: "5vh",
+      minHeight: "30vh",
     }}
   >
     <div
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
-        backgroundImage: "url('/assets/landing/background.jpeg')",
+        backgroundImage: "url('/assets/blog/header.jpeg')",
       }}
     >
       <span

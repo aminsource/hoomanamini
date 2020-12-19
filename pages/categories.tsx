@@ -17,12 +17,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه اول
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The Catalyzer
+                  نام گروه
                 </h2>
-                <p className="mt-1">$16.00</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -35,12 +34,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه دوم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
+                  نام گروه
                 </h2>
-                <p className="mt-1">$21.15</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -53,12 +51,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه سوم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Neptune
+                  نام گروه
                 </h2>
-                <p className="mt-1">$12.00</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -71,12 +68,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه چهارم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
+                  نام گروه
                 </h2>
-                <p className="mt-1">$18.40</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -89,12 +85,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه پنجم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The Catalyzer
+                  نام گروه
                 </h2>
-                <p className="mt-1">$16.00</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -107,12 +102,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه ششم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Shooting Stars
+                  نام گروه
                 </h2>
-                <p className="mt-1">$21.15</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -125,12 +119,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه هفتم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  Neptune
+                  نام گروه
                 </h2>
-                <p className="mt-1">$12.00</p>
               </div>
             </div>
             <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -143,12 +136,11 @@ const categories = () => {
               </a>
               <div className="mt-4">
                 <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  CATEGORY
+                  گروه هشتم
                 </h3>
                 <h2 className="text-gray-900 title-font text-lg font-medium">
-                  The 400 Blows
+                  نام گروه
                 </h2>
-                <p className="mt-1">$18.40</p>
               </div>
             </div>
           </div>
@@ -171,7 +163,7 @@ const Title = () => (
     <div
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
-        backgroundImage: "url('/assets/landing/background.jpeg')",
+        backgroundImage: "url('/assets/ecommerce/header.jpg')",
       }}
     >
       <span
