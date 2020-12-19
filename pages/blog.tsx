@@ -20,6 +20,7 @@ const Index = ({ allPosts }: Props) => {
         <Head>
           <title>{CMS_NAME}</title>
         </Head>
+        <Title />
         <Container>
           {heroPost && (
             <HeroPost
@@ -53,3 +54,33 @@ export const getStaticProps = async () => {
     props: { allPosts },
   };
 };
+
+const Title = () => (
+  <div
+    className="relative pt-5 pb-10 flex content-center items-center justify-center mb-10"
+    style={{
+      minHeight: "5vh",
+    }}
+  >
+    <div
+      className="absolute top-0 w-full h-full bg-center bg-cover"
+      style={{
+        backgroundImage: "url('/assets/landing/background.jpeg')",
+      }}
+    >
+      <span
+        id="blackOverlay"
+        className="w-full h-full absolute opacity-75 bg-black"
+      ></span>
+    </div>
+    <div className="container relative mx-auto">
+      <div className="items-center flex flex-wrap">
+        <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div>
+            <h1 className="text-white font-semibold text-5xl">وبلاگ</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
