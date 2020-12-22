@@ -36,12 +36,12 @@ const Hero = () => (
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div>
             <h1 className="text-white font-semibold text-5xl">
-              پروژه بستر تجارت الکترونیک مانا
+              پروژه کیت فرانت‌اند فارسی مانا
             </h1>
             <p className="mt-4 text-lg text-gray-300">
-              هدف از مانا ایجاد بستر اوپن سورس تجارت الکترونیک خصوصا فروشگاه
-              اینترنتی به همراه بهره‌گیری از ابزار و سرویس های ارایه شده درایران
-              بر پایه تکنولوژی های پیشرفته وب می باشد.
+              هدف از مانا ایجاد کیت یا مجموعه از ماژول ها و کامپوننت های فارسی
+              سازی شده جهت توسعه فرانت‌اند بر پایه تکنولوژی های پیشرفته وب به
+              همراه محتواهای آموزشی می باشد.
             </p>
           </div>
         </div>
@@ -82,9 +82,8 @@ const Services = () => (
                 </div>
                 <h6 className="text-xl font-semibold">وبلاگ</h6>
                 <p className="mt-2 mb-4 text-gray-600">
-                  ارایه گفتارهای تخصصی نشانه تخصص هر کسب و کاری می باشد و یکی از
-                  راه های حرفه ای جذب مشتری است که در بستر وبلاگ مانا ارایه می
-                  گردد.
+                  ارائه گفتارها و مطالب آموزشی در رابطه با توسعه فرانت اند وب و
+                  ابزارهای بکار گرفته شده در مانا
                 </p>
               </div>
             </div>
@@ -96,13 +95,10 @@ const Services = () => (
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <i className="fas fa-shopping-cart"></i>
+                  <i className="far fa-credit-card"></i>
                 </div>
-                <h6 className="text-xl font-semibold">فروشگاه اینترنتی</h6>
-                <p className="mt-2 mb-4 text-gray-600">
-                  فروش و ارایه محصول هدف نهایی یک کسب و کار و یا بنگاه اقتصادی
-                  می باشد که در بستر فروشگاه اینترنتی مانا ارایه می گردد.
-                </p>
+                <h6 className="text-xl font-semibold">الگوها </h6>
+                <p className="mt-2 mb-4 text-gray-600">الگوها و کامپوننت ها</p>
               </div>
             </div>
           </Link>
@@ -113,16 +109,10 @@ const Services = () => (
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg ">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <i className="fa fa-users"></i>
+                  <i className="fab fa-uikit"></i>
                 </div>
-                <h6 className="text-xl font-semibold">
-                  باشگاه و ارتباط با مشتریان
-                </h6>
-                <p className="mt-2 mb-4 text-gray-600">
-                  ارتباط با مشتری و ارایه خدمات پس از فروش بهترین راه بازاریابی
-                  و افزایش فروش خواهد بود که در بستر باشگاه مشتریان قابل ارایه
-                  است.
-                </p>
+                <h6 className="text-xl font-semibold">کیت استارتر</h6>
+                <p className="mt-2 mb-4 text-gray-600">برنامه‌های کاربردی</p>
               </div>
             </div>
           </Link>
@@ -138,7 +128,7 @@ const Services = () => (
             همکاری در پروژه
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-            از آنجاییکه مانا قرار است به صورت اوپن سورس ارایه گردد هرگونه همکاری
+            از آنجاییکه مانا قرار است به صورت اوپن سورس ارائه گردد هرگونه همکاری
             تخصصی بر بستر گیت هاب موجب امتنان است.
           </p>
           <a href="" className="font-bold text-gray-800 mt-8">
@@ -221,8 +211,8 @@ const Featured = () => (
             <h3 className="text-3xl font-semibold">تکنولوژی های پروژه</h3>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               یکی از اهداف پروزه مانا استفاده از آخرین تکنولوژی های نرم افزاری
-              روز دنیا در آن بوده است، لذا در از ابزار و بسترهای زیر در آن
-              استفاده شده است.
+              روز دنیا در آن بوده است، لذا از ابزار و بسترهای زیر در آن استفاده
+              شده است.
             </p>
             <ul className="list-none mt-6">
               <li className="py-2">
@@ -233,7 +223,20 @@ const Featured = () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">ری اکت و نکست جی اس</h4>
+                    <h4 className="text-gray-600">جاوااسکریپت</h4>
+                  </div>
+                </div>
+              </li>
+
+              <li className="py-2">
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
+                      <i className="fas fa-fingerprint"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600">ری‌اکت و نکست‌ جی اس</h4>
                   </div>
                 </div>
               </li>
@@ -246,20 +249,6 @@ const Featured = () => (
                   </div>
                   <div>
                     <h4 className="text-gray-600">تیل ویند Tailwind</h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="far fa-paper-plane"></i>
-                    </span>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-600">
-                      استرپی Headless CMS Strapi به عنوان بستر بک اند
-                    </h4>
                   </div>
                 </div>
               </li>
@@ -278,8 +267,8 @@ const Team = () => (
         <div className="w-full lg:w-6/12 px-4">
           <h2 className="text-4xl font-semibold">تیم پروژه در حال حاضر</h2>
           <p className="text-lg leading-relaxed m-4 text-gray-600">
-            تیم ما در حال حاضر به شرح زیر می باشد و عضویت شما در تیم ما پذیرا
-            خواهد بود و موجب شادی ما خواهد شد.
+            تیم ما در حال حاضر به شرح زیر می باشد و عضویت شما در این تیم باعث
+            شادی ما خواهد شد.
           </p>
         </div>
       </div>
@@ -366,7 +355,7 @@ const Finisher = () => (
           <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
             <i className="fas fa-lightbulb text-xl"></i>
           </div>
-          <h5 className="text-xl mt-5 font-semibold text-white">زمان ارایه</h5>
+          <h5 className="text-xl mt-5 font-semibold text-white">زمان ارائه</h5>
           <p className="mt-2 mb-4 text-gray-500">
             این پروژه به مرور تکمیل می شود و از زمان ایجاد آن قابل همکاری و
             استفاده توسط مخاطبین آن می باشد.
@@ -378,7 +367,7 @@ const Finisher = () => (
             <i className="fas fa-medal text-xl"></i>
           </div>
           <h6 className="text-xl mt-5 font-semibold text-white">خدمات تخصصی</h6>
-          <p className="mt-2 mb-4 text-gray-500">در حال حاضر ارایه نمی‌گردد</p>
+          <p className="mt-2 mb-4 text-gray-500">در حال حاضر ارائه نمی‌گردد</p>
         </div>
       </div>
     </div>
