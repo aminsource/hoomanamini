@@ -1,8 +1,8 @@
 ## Running Locally
 
 ```bash
-$ git clone https://github.com/leerob/leerob.io.git
-$ cd leerob.io
+$ git clone https://github.com/aminsource/mana.git
+$ cd mana
 $ yarn
 $ yarn dev
 ```
