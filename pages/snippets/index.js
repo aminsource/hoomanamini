@@ -4,7 +4,7 @@ import Container from '@/components/Container';
 import FunctionCard from '@/components/FunctionCard';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
-const url = 'https://leerob.io/snippets';
+const url = 'https://manakit.ir/snippets';
 const title = 'Code Snippets – مانا کیت';
 
 export default function Snippets({ snippets }) {

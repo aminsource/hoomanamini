@@ -40,9 +40,9 @@ export default function About() {
     <Container>
       <NextSeo
         title="About Me – مانا کیت"
-        canonical="https://leerob.io/about"
+        canonical="https://manakit.ir/about"
         openGraph={{
-          url: 'https://leerob.io/about',
+          url: 'https://manakit.ir/about',
           title: 'About Me – مانا کیت'
         }}
       />

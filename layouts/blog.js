@@ -7,17 +7,17 @@ import ViewCounter from '@/components/ViewCounter';
 import BlogSeo from '@/components/BlogSeo';
 
 const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/master/data/blog/${slug}.mdx`;
+  `https://github.com/leerob/manakit.ir/edit/master/data/blog/${slug}.mdx`;
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
+    `https://manakit.ir/blog/${slug}`
   )}`;
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
     <Container>
       <BlogSeo
-        url={`https://leerob.io/blog/${frontMatter.slug}`}
+        url={`https://manakit.ir/blog/${frontMatter.slug}`}
         {...frontMatter}
       />
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">

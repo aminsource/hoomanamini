@@ -10,7 +10,7 @@ import Unsplash from '@/components/metrics/Unsplash';
 import YouTube from '@/components/metrics/Youtube';
 import TopTracks from '@/components/TopTracks';
 
-const url = 'https://leerob.io/dashboard';
+const url = 'https://manakit.ir/dashboard';
 const title = 'Dashboard – مانا کیت';
 const description =
   'My personal dashboard, built with Next.js API routes deployed as serverless functions.';

@@ -5,16 +5,16 @@ const description =
 const SEO = {
   title,
   description,
-  canonical: 'https://leerob.io',
+  canonical: 'https://manakit.ir',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://leerob.io',
+    url: 'https://manakit.ir',
     title,
     description,
     images: [
       {
-        url: 'https://leerob.io/static/images/banner.jpg',
+        url: 'https://manakit.ir/static/images/banner.jpg',
         alt: title,
         width: 1280,
         height: 720

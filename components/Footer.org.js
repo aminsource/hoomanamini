@@ -77,7 +77,7 @@ export default function Footer() {
             </g>
           </svg>
         </ExternalLink>
-        <ExternalLink href="mailto:me@leerob.io">
+        <ExternalLink href="mailto:me@manakit.ir">
           <span className="sr-only">Email</span>
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <g
@@ -92,7 +92,7 @@ export default function Footer() {
             </g>
           </svg>
         </ExternalLink>
-        <ExternalLink href="https://myspace.leerob.io">
+        <ExternalLink href="https://myspace.manakit.ir">
           <span className="sr-only">MySpace</span>
           <svg className="h-5 w-5" viewBox="0 0 24 24">
             <path
@@ -106,7 +106,7 @@ export default function Footer() {
         <Link href="/uses">
           <a className="text-sm text-gray-500 hover:text-gray-600">/uses</a>
         </Link>
-        <ExternalLink href="https://photos.leerob.io">/photos</ExternalLink>
+        <ExternalLink href="https://photos.manakit.ir">/photos</ExternalLink>
         <Link href="/newsletter">
           <a className="text-sm text-gray-500 hover:text-gray-600">
             /newsletter

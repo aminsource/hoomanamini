@@ -5,7 +5,7 @@ import Container from '@/components/Container';
 import BlogPost from '@/components/BlogPost';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
-const url = 'https://leerob.io/blog';
+const url = 'https://manakit.ir/blog';
 const title = 'Blog – مانا کیت';
 const description =
   'Thoughts on the software industry, programming, tech, videography, music, and my personal life.';

@@ -9,7 +9,7 @@ export default function NewsletterLayout({ children, frontMatter }) {
   return (
     <Container>
       <BlogSeo
-        url={`https://leerob.io/newsletter/${frontMatter.slug}`}
+        url={`https://manakit.ir/newsletter/${frontMatter.slug}`}
         {...frontMatter}
       />
       <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">

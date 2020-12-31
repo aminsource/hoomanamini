@@ -8,9 +8,9 @@ export default function NotFound() {
     <Container>
       <NextSeo
         title="404 – مانا کیت"
-        canonical="https://leerob.io/404"
+        canonical="https://manakit.ir/404"
         openGraph={{
-          url: 'https://leerob.io/404',
+          url: 'https://manakit.ir/404',
           title: '404 – مانا کیت'
         }}
       />
