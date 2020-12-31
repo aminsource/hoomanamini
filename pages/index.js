@@ -18,7 +18,7 @@ const Hero = () => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center"
     style={{
-      minHeight: '75vh'
+      minHeight: '50vh'
     }}
   >
     <div
@@ -37,7 +37,7 @@ const Hero = () => (
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div>
             <h1 className="text-white font-semibold text-5xl">
-              پروژه‌ کیت فرانت‌اند فارسی مانا
+              پروژه‌ کیت فرانت‌ فارسی مانا
             </h1>
             <p className="mt-4 text-lg text-gray-300">
               هدف از مانا ایجاد کیت یا مجموعه‌ای از الگوها و کامپوننت های فارسی
@@ -62,7 +62,7 @@ const Hero = () => (
         y="0"
       >
         <polygon
-          className="text-gray-300 fill-current"
+          className="text-gray-300 dark:text-black fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -71,18 +71,20 @@ const Hero = () => (
 );
 
 const Services = () => (
-  <section className="pb-20 bg-gray-300 -mt-24">
+  <section className="pb-20 dark:bg-black bg-gray-300 -mt-24">
     <div className="container mx-auto px-4">
       <div className="flex flex-wrap">
         <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
           <Link href="/blog">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div className="relative flex flex-col min-w-0 break-words bg-white dark:text-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                   <i className="fas fa-blog"></i>
                 </div>
-                <h6 className="text-xl font-semibold">وبلاگ</h6>
-                <p className="mt-2 mb-4 text-gray-600">
+                <h6 className="text-black dark:text-white text-xl font-semibold">
+                  وبلاگ
+                </h6>
+                <p className="mt-2 mb-4 text-gray-600 ">
                   ارائه گفتارها و مطالب آموزشی در رابطه با توسعه فرانت اند وب و
                   ابزارهای بکار گرفته شده در مانا
                 </p>
@@ -93,13 +95,15 @@ const Services = () => (
 
         <div className="w-full md:w-4/12 px-4 text-center cursor-pointer">
           <Link href="/templates">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                   <i className="far fa-credit-card"></i>
                 </div>
-                <h6 className="text-xl font-semibold">الگوها </h6>
-                <p className="mt-2 mb-4 text-gray-600">
+                <h6 className="text-xl font-semibold text-black dark:text-white">
+                  الگوها
+                </h6>
+                <p className="mt-2 mb-4 text-gray-600 ">
                   الگوها، قالب‌ها و کامپوننت ها
                 </p>
               </div>
@@ -109,13 +113,17 @@ const Services = () => (
 
         <div className="pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
           <Link href="/loyalty">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg ">
+            <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg ">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                   <i className="fab fa-uikit"></i>
                 </div>
-                <h6 className="text-xl font-semibold">کیت استارتر</h6>
-                <p className="mt-2 mb-4 text-gray-600">برنامه‌های کاربردی</p>
+                <h6 className="text-xl font-semibold text-black dark:text-white">
+                  تکه کدها
+                </h6>
+                <p className="mt-2 mb-4 text-gray-600">
+                  کد های قابل استفاده مجدد
+                </p>
               </div>
             </div>
           </Link>
@@ -127,14 +135,14 @@ const Services = () => (
           <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
             <i className="fas fa-user-friends text-xl"></i>
           </div>
-          <h3 className="text-3xl mb-2 font-semibold leading-normal">
+          <h3 className="text-3xl mb-2 font-semibold leading-normal text-black dark:text-white">
             همکاری در پروژه
           </h3>
-          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 dark:text-white">
             از آنجاییکه مانا قرار است به صورت اوپن سورس ارائه گردد هرگونه همکاری
             تخصصی بر بستر گیت هاب موجب امتنان است.
           </p>
-          <a href="" className="font-bold text-gray-800 mt-8">
+          <a href="" className="font-bold text-gray-800 dark:text-white mt-8">
             پروژه در گیت هاب را بررسی فرمایید.
           </a>
         </div>
@@ -191,7 +199,7 @@ const Featured = () => (
         y="0"
       >
         <polygon
-          className="text-white fill-current"
+          className="text-white dark:text-black fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -211,8 +219,10 @@ const Featured = () => (
             <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mt-6 mb-6 shadow-lg rounded-full bg-pink-300">
               <i className="fas fa-rocket text-xl"></i>
             </div>
-            <h3 className="text-3xl font-semibold">تکنولوژی های پروژه</h3>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            <h3 className="text-3xl font-semibold dark:text-white">
+              تکنولوژی های پروژه
+            </h3>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600 dark:text-white">
               یکی از اهداف پروزه مانا استفاده از آخرین تکنولوژی های نرم افزاری
               روز دنیا در آن بوده است، لذا از ابزار و بسترهای زیر در آن استفاده
               شده است.
@@ -226,7 +236,9 @@ const Featured = () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">جاوااسکریپت</h4>
+                    <h4 className="text-gray-600 dark:text-white">
+                      جاوااسکریپت
+                    </h4>
                   </div>
                 </div>
               </li>
@@ -239,7 +251,9 @@ const Featured = () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">ری‌اکت و نکست‌ جی اس</h4>
+                    <h4 className="text-gray-600 dark:text-white">
+                      ری‌اکت و نکست‌ جی اس
+                    </h4>
                   </div>
                 </div>
               </li>
@@ -251,7 +265,9 @@ const Featured = () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">تیل ویند Tailwind</h4>
+                    <h4 className="text-gray-600 dark:text-white">
+                      تیل ویند Tailwind
+                    </h4>
                   </div>
                 </div>
               </li>
@@ -285,7 +301,9 @@ const Team = () => (
               style={{ maxWidth: "120px" }}
             /> */}
             <div className="pt-6 text-center">
-              <h5 className="text-xl font-bold">هومن امینی</h5>
+              <h5 className="text-xl font-bold text-black dark:text-white">
+                هومن امینی
+              </h5>
               <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                 ایجاد کننده و توسعه دهنده وب
               </p>

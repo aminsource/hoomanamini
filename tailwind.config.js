@@ -73,7 +73,11 @@ module.exports = {
     }
   },
   variants: {
-    typography: ['dark']
+    typography: ['dark'],
+    float: ['responsive', 'direction'],
+    margin: ['responsive', 'direction'],
+    padding: ['responsive', 'direction']
   },
-  plugins: [require('@tailwindcss/typography')]
+  // plugins: [require('@tailwindcss/typography')]
+  plugins: [require('tailwindcss-dir')(), require('@tailwindcss/typography')]
 };
