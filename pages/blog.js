@@ -8,7 +8,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 const url = 'https://manakit.ir/blog';
 const title = 'Blog – مانا کیت';
 const description =
-  'Thoughts on the software industry, programming, tech, videography, music, and my personal life.';
+  'برای یادداشت درباره مهندسی و صنعت نرم افزار، ابزار و کتابخانه های وابسته اینجا می نویسم - هومن امینی ';
 
 export default function Blog({ posts }) {
   const [searchValue, setSearchValue] = useState('');
@@ -38,9 +38,7 @@ export default function Blog({ posts }) {
           وبلاگ
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written ${posts.length} articles on this site.
-            Use the search below to filter by title.`}
+          {`تعداد پست ها ${posts.length} .`}
         </p>
         <div className="relative w-full mb-4">
           <input
@@ -71,9 +69,9 @@ export default function Blog({ posts }) {
               محبوب ها
             </h3>
             <BlogPost
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              summary="A deep-dive on everything I've learned in the past year building style guides, design systems, component libraries, and their best practices."
-              slug="style-guides-component-libraries-design-systems"
+              title="جاوااسکریپت چیست؟"
+              summary="شما هنوز جی اس نمی دانید، من هم به طور کامل نمی دانم، هیچ کدام از ما نمی توانیم این ادعا را داشته باشیم."
+              slug="What-Is-Javascript"
             />
           </>
         )}
