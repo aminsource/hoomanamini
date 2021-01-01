@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { parseISO, format } from 'date-fns';
 
 import Container from '@/components/Container';
-import Subscribe from '@/components/Subscribe';
+// import Subscribe from '@/components/Subscribe';
 import ViewCounter from '@/components/ViewCounter';
 import BlogSeo from '@/components/BlogSeo';
 
@@ -20,44 +20,44 @@ export default function BlogLayout({ children, frontMatter }) {
         url={`https://manakit.ir/blog/${frontMatter.slug}`}
         {...frontMatter}
       />
-      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full px-8">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           {frontMatter.title}
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2 mb-8">
           <div className="flex items-center">
-            <Image
+            {/* <Image
               alt="مانا کیت"
               height={24}
               width={24}
               src="/avatar.jpg"
               className="rounded-full"
-            />
-            <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
+            /> */}
+            {/* <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
               {'مانا کیت / '}
               {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
-            </p>
+            </p> */}
           </div>
-          <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
+          {/* <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
             {frontMatter.readingTime.text}
             {` • `}
             <ViewCounter slug={frontMatter.slug} />
-          </p>
+          </p> */}
         </div>
         <div className="prose dark:prose-dark max-w-none w-full">
           {children}
         </div>
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <Subscribe />
-        </div>
+        </div> */}
         <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={discussUrl(frontMatter.slug)}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {'Discuss on Twitter'}
+            {'در توییتر بحث کنید'}
           </a>
           {` • `}
           <a
@@ -65,7 +65,7 @@ export default function BlogLayout({ children, frontMatter }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {'Edit on GitHub'}
+            {'در گیت هاب ویرایش کنید'}
           </a>
         </div>
       </article>

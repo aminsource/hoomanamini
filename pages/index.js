@@ -139,10 +139,14 @@ const Services = () => (
             همکاری در پروژه
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 dark:text-white">
-            از آنجاییکه مانا قرار است به صورت اوپن سورس ارائه گردد هرگونه همکاری
-            تخصصی بر بستر گیت هاب موجب امتنان است.
+            از آنجاییکه مانابه صورت اوپن سورس ارائه گردیده است، لذا هرگونه
+            همکاری تخصصی بر بستر گیت هاب موجب امتنان است.
           </p>
-          <a href="" className="font-bold text-gray-800 dark:text-white mt-8">
+          <a
+            href="https://github.com/aminsource/mana"
+            target="__blank"
+            className="font-bold text-gray-800 dark:text-white mt-8"
+          >
             پروژه در گیت هاب را بررسی فرمایید.
           </a>
         </div>
