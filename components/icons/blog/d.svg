@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 266 150"
+   fill="none"
+   version="1.1"
+   id="svg1788"
+   sodipodi:docname="d.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
+   id="metadata1794">
+  <rdf:RDF>
+    <cc:Work
+       rdf:about="">
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    </cc:Work>
+  </rdf:RDF>
+</metadata>
+<defs
+   id="defs1792" />
+<sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1016"
+   id="namedview1790"
+   showgrid="false"
+   inkscape:zoom="4.943609"
+   inkscape:cx="133"
+   inkscape:cy="75"
+   inkscape:window-x="0"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1788" />
+<path
+   fill="var(--solid)"
+   d="M0 0h266v150H0z"
+   id="path1748" />
+<rect
+   id="rect1750" />
+{84}
+        y={20}
+        width={70}
+        height={5}
+        rx={2.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+      <rect
+   id="rect1752" />
+{84}
+        y={29}
+        width={145}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1754" />
+{20} y={26} width={12} height={2} rx={1} fill=&quot;var(--base-500)&quot; /&gt;
+      <rect
+   id="rect1756" />
+{84}
+        y={35}
+        width={129}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1758" />
+{84}
+        y={41}
+        width={18}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--main-500)&quot;
+      /&gt;
+      <path
+   d="M245.5 53a.5.5 0 010 1h-225a.5.5 0 010-1h225zM245.5 96a.5.5 0 010 1h-225a.5.5 0 010-1h225z"
+   fill="var(--base-300)"
+   id="path1760"
+   style="fill:#333333" />
+<rect
+   id="rect1762" />
+{20}
+        y={20}
+        width={23}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+      <rect
+   id="rect1764" />
+{84}
+        y={63}
+        width={70}
+        height={5}
+        rx={2.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+      <rect
+   id="rect1766" />
+{84}
+        y={72}
+        width={145}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1768" />
+{20} y={69} width={12} height={2} rx={1} fill=&quot;var(--base-500)&quot; /&gt;
+      <rect
+   id="rect1770" />
+{84}
+        y={78}
+        width={129}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1772" />
+{84}
+        y={84}
+        width={18}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--main-500)&quot;
+      /&gt;
+      <rect
+   id="rect1774" />
+{20}
+        y={63}
+        width={23}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+      <rect
+   id="rect1776" />
+{84}
+        y={106}
+        width={70}
+        height={5}
+        rx={2.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+      <rect
+   id="rect1778" />
+{84}
+        y={115}
+        width={145}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1780" />
+{20}
+        y={112}
+        width={12}
+        height={2}
+        rx={1}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1782" />
+{84}
+        y={121}
+        width={129}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--base-500)&quot;
+      /&gt;
+      <rect
+   id="rect1784" />
+{84}
+        y={127}
+        width={18}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--main-500)&quot;
+      /&gt;
+      <rect
+   id="rect1786" />
+{20}
+        y={106}
+        width={23}
+        height={3}
+        rx={1.5}
+        fill=&quot;var(--solid-900)&quot;
+      /&gt;
+    </svg>
