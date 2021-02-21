@@ -40,9 +40,10 @@ const Hero = () => (
               <h1 className="text-white font-semibold text-5xl">هومن امینی</h1>
             </div>
 
-            <p className="mt-8 text-2xl text-gray-300">
-              هدف از این سایت یادداشت‌های تخصصی و تجربیات اینجانب در رابطه با مهندسی و تولید نرم افزار، خصوصا مهارت ها و ترفندهای حوزه وب است.
+            <p className="mt-8 text-2xl text-gray-300 leading-loose">
+              هدف از این سایت یادداشت‌های تخصصی و محتواهای آموزشی  <br />در رابطه با مهندسی و تولید نرم افزار، <br />خصوصاً. مهارت ها و ترفندهای حوزه وب می‌باشد.
             </p>
+
           </div>
         </div>
       </div>
@@ -66,7 +67,7 @@ const Hero = () => (
         ></polygon>
       </svg>
     </div>
-  </div>
+  </div >
 );
 
 const Services = () => (
@@ -76,7 +77,7 @@ const Services = () => (
 
         <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
 
-          <Link href="/blocks">
+          <a href="https://www.youtube.com/channel/UCIo-sKUGRl7C1IMpdui9McA?sub_confirmation=1" target="__blank">
             <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
@@ -90,7 +91,7 @@ const Services = () => (
                 </p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="w-full md:w-4/12 px-4 text-center cursor-pointer">
@@ -140,7 +141,7 @@ const Services = () => (
             درباره  من
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 dark:text-white">
-            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار دارم
+            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار در حوزه های فرانت و بک اند و همچنین نگهداری دیتابیس‌ ها دارم  و دراینجا قصد دارم به مرور مواردی که کاربردی هستند و مورد علاقه خودم هست را به تدریج منتشر نمایم که هم جنبه یادداشت شخصی دارد و اگر هم مورد استفاده همکاران و مخاطبین عزیز بشود باعث خوشحالی اینجانب می گردد.<br /> هر نوع همکاری و مشارکت در این زمینه باعث امتنان است و سورس کد این سایت در گیت هاب میباشد.
           </p>
           {/* <a
             href="https://github.com/aminsource/mana"
