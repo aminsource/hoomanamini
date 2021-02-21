@@ -1,4 +1,4 @@
-const title = 'مانا کیت';
+const title = 'هومن امینی';
 const description =
   'Front-end developer, JavaScript enthusiast, and course creator.';
 

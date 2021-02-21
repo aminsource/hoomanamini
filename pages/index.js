@@ -7,7 +7,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Featured />
-      <Team />
+      {/* <Team /> */}
       <Finisher />
     </Container>
   );
@@ -37,16 +37,11 @@ const Hero = () => (
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div>
             <div>
-              <h1 className="text-white font-semibold text-5xl">مانا</h1>
+              <h1 className="text-white font-semibold text-5xl">هومن امینی</h1>
             </div>
 
-            <h1 className="text-white font-semibold text-5xl mt-4">
-              پروژه‌ کیت فرانت‌
-            </h1>
-            <p className="mt-8 text-lg text-gray-300">
-              هدف از مانا ایجاد کیت یا مجموعه‌ای از الگوها و کامپوننت های فارسی
-              سازی شده جهت توسعه فرانت‌اند بر پایه تکنولوژی های پیشرفته وب به
-              همراه محتواهای آموزشی می باشد.
+            <p className="mt-8 text-2xl text-gray-300">
+              هدف از این سایت یادداشت‌های تخصصی و تجربیات اینجانب در رابطه با مهندسی و تولید نرم افزار، خصوصا مهارت ها و ترفندهای حوزه وب است.
             </p>
           </div>
         </div>
@@ -78,7 +73,27 @@ const Services = () => (
   <section className="pb-20 dark:bg-black bg-gray-300 -mt-24">
     <div className="container mx-auto px-4">
       <div className="flex flex-wrap">
+
         <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
+
+          <Link href="/blocks">
+            <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
+              <div className="px-4 py-5 flex-auto">
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <i className="far fa-credit-card"></i>
+                </div>
+                <h6 className="text-xl font-semibold text-black dark:text-white">
+                  فیلم های آموزشی
+                </h6>
+                <p className="mt-2 mb-4 text-gray-600 ">
+                  فیلم های آموزشی ارایه شده
+                </p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        <div className="w-full md:w-4/12 px-4 text-center cursor-pointer">
           <Link href="/blog">
             <div className="relative flex flex-col min-w-0 break-words bg-white dark:text-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
               <div className="px-4 py-5 flex-auto">
@@ -89,31 +104,13 @@ const Services = () => (
                   وبلاگ
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600 ">
-                  ارائه گفتارها و مطالب آموزشی در رابطه با توسعه فرانت اند وب و
-                  ابزارهای بکار گرفته شده در مانا
+                  ارائه گفتارها و مطالب آموزشی
                 </p>
               </div>
             </div>
           </Link>
         </div>
 
-        <div className="w-full md:w-4/12 px-4 text-center cursor-pointer">
-          <Link href="/blocks">
-            <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
-              <div className="px-4 py-5 flex-auto">
-                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <i className="far fa-credit-card"></i>
-                </div>
-                <h6 className="text-xl font-semibold text-black dark:text-white">
-                  الگوها
-                </h6>
-                <p className="mt-2 mb-4 text-gray-600 ">
-                  الگوها، قالب‌ها و کامپوننت ها
-                </p>
-              </div>
-            </div>
-          </Link>
-        </div>
 
         <div className="pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
           <Link href="/snippets">
@@ -140,19 +137,18 @@ const Services = () => (
             <i className="fas fa-user-friends text-xl"></i>
           </div>
           <h3 className="text-3xl mb-2 font-semibold leading-normal text-black dark:text-white">
-            همکاری در پروژه
+            درباره  من
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 dark:text-white">
-            از آنجاییکه مانابه صورت اوپن سورس ارائه گردیده است، لذا هرگونه
-            همکاری تخصصی بر بستر گیت هاب موجب امتنان است.
+            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار دارم
           </p>
-          <a
+          {/* <a
             href="https://github.com/aminsource/mana"
             target="__blank"
             className="font-bold text-gray-800 dark:text-white mt-8"
           >
             پروژه در گیت هاب را بررسی فرمایید.
-          </a>
+          </a> */}
         </div>
 
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-5">
@@ -178,10 +174,9 @@ const Services = () => (
                   className="text-pink-600 fill-current"
                 ></polygon>
               </svg>
-              <h4 className="text-xl font-bold text-white">اسپانسر</h4>
+              <h4 className="text-xl font-bold text-white">محل فعالیت من</h4>
               <p className="text-md font-light mt-2 text-white">
-                در این راه هرگونه خدمات اسپانسری نیز بسیار دلگرم کننده است و
-                پذیرفته می شود.
+                مجموعه فناپ - شرکت پرداخت الکترونیک پاسارگاد
               </p>
             </blockquote>
           </div>
@@ -227,14 +222,9 @@ const Featured = () => (
             <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mt-6 mb-6 shadow-lg rounded-full bg-pink-300">
               <i className="fas fa-rocket text-xl"></i>
             </div>
-            <h3 className="text-3xl font-semibold dark:text-white">
-              تکنولوژی های پروژه
+            <h3 className="text-3xl font-semibold text-gray-600 dark:text-white">
+              حوزه‌‌های مورد علاقه
             </h3>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600 dark:text-white">
-              یکی از اهداف پروزه مانا استفاده از آخرین تکنولوژی های نرم افزاری
-              روز دنیا در آن بوده است، لذا از ابزار و بسترهای زیر در آن استفاده
-              شده است.
-            </p>
             <ul className="list-none mt-6">
               <li className="py-2">
                 <div className="flex items-center">
@@ -274,11 +264,56 @@ const Featured = () => (
                   </div>
                   <div>
                     <h4 className="text-gray-600 dark:text-white">
-                      تیل ویند Tailwind
+                      پایتون
                     </h4>
                   </div>
                 </div>
               </li>
+              <li className="py-2">
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
+                      <i className="fab fa-html5"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600 dark:text-white">
+                      توسعه اپلیکیشن های اندروید
+                    </h4>
+                  </div>
+                </div>
+              </li>
+
+              <li className="py-2">
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
+                      <i className="fab fa-html5"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600 dark:text-white">
+                      مشارکت در پروژه‌های اوپن سورس
+                    </h4>
+                  </div>
+                </div>
+              </li>
+
+              <li className="py-2">
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
+                      <i className="fab fa-html5"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600 dark:text-white">
+                      تجارت الکترونیک
+                    </h4>
+                  </div>
+                </div>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -370,33 +405,22 @@ const Finisher = () => (
 
     <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
       <div className="flex flex-wrap text-center justify-center">
-        <div className="w-full lg:w-6/12 px-4 mt-10">
+        {/* <div className="w-full lg:w-6/12 px-4 mt-10">
           <h2 className="text-4xl font-semibold text-white">
-            مشارکت و هم افزایی موتور توسعه
+            حوزه های تجربه شده من
           </h2>
           <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
             مشارکت و هم افزایی موتور توسعه
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-wrap mt-12 justify-center">
-        <div className="w-full lg:w-3/12 px-4 text-center">
-          <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-            <i className="fas fa-lightbulb text-xl"></i>
-          </div>
-          <h5 className="text-xl mt-5 font-semibold text-white">زمان ارائه</h5>
-          <p className="mt-2 mb-4 text-gray-500">
-            این پروژه به مرور تکمیل می شود و از زمان ایجاد آن قابل همکاری و
-            استفاده توسط مخاطبین آن می باشد.
-          </p>
-        </div>
-
         <div className="w-full lg:w-3/12 px-4 text-center">
           <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
             <i className="fas fa-medal text-xl"></i>
           </div>
           <h6 className="text-xl mt-5 font-semibold text-white">خدمات تخصصی</h6>
-          <p className="mt-2 mb-4 text-gray-500">در حال حاضر ارائه نمی‌گردد</p>
+          <p className="mt-2 mb-4 text-gray-500">مشاوره تولید نرم افزار</p>
         </div>
       </div>
     </div>

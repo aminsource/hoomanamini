@@ -29,7 +29,7 @@ function Footer() {
               تماس
             </h4>
             <h5 className="text-lg mt-3 mb-2 text-gray-700 dark:text-white">
-              از روش های زیر می توانید با ما در تماس باشید.
+              از روش های زیر می توانید با ما من در تماس باشید.
             </h5>
             <div className="mt-6">
               <div className="flex justify-evenly">
