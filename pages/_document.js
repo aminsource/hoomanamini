@@ -53,6 +53,7 @@ class MyDocument extends Document {
             content="eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw"
             name="google-site-verification"
           />
+          <script async defer data-website-id="717b9207-b8f0-41d4-8a14-8b7a4286a02f" src="https://rdyaab.hoomanamini.ir/umami.js"></script>
         </Head>
         <body
           className="bg-white dark:bg-black text-white dark:text-black"
