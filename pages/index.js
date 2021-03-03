@@ -1,16 +1,29 @@
 import Link from 'next/link';
 import Container from '@/components/Container';
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
     <Container>
       <Hero />
       <Services />
-      <Featured />
-      <Finisher />
+      <Favorite />
+      {/* <Finisher /> */}
     </Container>
   );
 }
+const nameVariants = {
+  hidden: {
+    opacity: 0,
+    x: '100'
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: 'spring', delay: 0.5 }
+  },
+};
+
 
 /// Page Sections
 const Hero = () => (
@@ -34,14 +47,13 @@ const Hero = () => (
     <div className="container relative mx-auto">
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-          <div>
-            <div>
-              <h1 className="text-white font-semibold text-5xl">هومن امینی</h1>
-            </div>
-
-            <p className="mt-8 text-2xl text-gray-300 leading-loose">
+          <div
+          >
+            <motion.p className="mt-8 text-2xl text-gray-300 leading-loose" initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 1 }}>
               هدف از این وب سایت یادداشت‌های تخصصی و محتواهای آموزشی  <br />در رابطه با مهندسی و تولید نرم افزار، <br />خصوصاً مهارت ها و ترفندهای حوزه توسعه وب می‌باشد.
-            </p>
+            </motion.p>
 
           </div>
         </div>
@@ -61,7 +73,7 @@ const Hero = () => (
         y="0"
       >
         <polygon
-          className="text-gray-300 dark:text-black fill-current"
+          className="text-yellow-400 dark:text-black fill-current"
           points="2560 0 2560 100 0 100"
         ></polygon>
       </svg>
@@ -70,19 +82,22 @@ const Hero = () => (
 );
 
 const Services = () => (
-  <section className="pb-20 dark:bg-black bg-gray-300 -mt-24">
+  <section className="pb-20 dark:bg-black bg-yellow-400 -mt-24">
     <div className="container mx-auto px-4">
       <div className="flex flex-wrap">
 
-        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
-
+        <motion.div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer"
+          whileHover={{ scale: 1.03, originX: 0 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <a href="https://www.youtube.com/channel/UCIo-sKUGRl7C1IMpdui9McA?sub_confirmation=1" target="__blank">
             <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
-              <div className="px-4 py-5 flex-auto">
-                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                  <i className="far fa-credit-card"></i>
+              <div className="px-4 py-5 flex-auto"
+              >
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-300">
+                  <i className="fas fa-video"></i>
                 </div>
-                <h6 className="text-xl font-semibold text-black dark:text-white">
+                <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
                   فیلم های آموزشی
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600 ">
@@ -91,16 +106,19 @@ const Services = () => (
               </div>
             </div>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="w-full md:w-4/12 px-4 text-center cursor-pointer">
+        <motion.div className="w-full md:w-4/12 px-4 text-center cursor-pointer"
+          whileHover={{ scale: 1.03, originX: 0 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <Link href="/blog">
-            <div className="relative flex flex-col min-w-0 break-words bg-white dark:text-white dark:bg-black w-full mb-8 shadow-lg rounded-lg">
-              <div className="px-4 py-5 flex-auto">
-                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+            <div className="relative flex flex-col min-w-0 break-words bg-white dark:text-white dark:bg-black  w-full mb-8 shadow-lg rounded-lg">
+              <div className="px-4 py-5 flex-auto border-purple-900">
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-300">
                   <i className="fas fa-blog"></i>
                 </div>
-                <h6 className="text-black dark:text-white text-xl font-semibold">
+                <h6 className="text-gray-600 dark:text-white text-xl font-semibold">
                   وبلاگ
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600 ">
@@ -109,17 +127,20 @@ const Services = () => (
               </div>
             </div>
           </Link>
-        </div>
+        </motion.div>
 
 
-        <div className="pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer">
+        <motion.div className="pt-6 w-full md:w-4/12 px-4 text-center cursor-pointer"
+          whileHover={{ scale: 1.03, originX: 0 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <Link href="/snippets">
             <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg ">
               <div className="px-4 py-5 flex-auto">
-                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
-                  <i className="fab fa-uikit"></i>
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-300">
+                  <i className="fas fa-code"></i>
                 </div>
-                <h6 className="text-xl font-semibold text-black dark:text-white">
+                <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
                   تکه کدها
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600">
@@ -128,12 +149,12 @@ const Services = () => (
               </div>
             </div>
           </Link>
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex flex-wrap items-center mt-32">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-          <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+          <div className="text-gray-600 p-1 text-center inline-flex items-center justify-center w-30 h-30 mb-6 shadow-lg bg-gray-100">
             {/* <i className="fas fa-user-friends text-xl"></i> */}
             <img
               alt="..."
@@ -142,16 +163,16 @@ const Services = () => (
             />
 
           </div>
-          <h3 className="text-3xl mb-2 font-semibold leading-normal text-black dark:text-white">
+          <h3 className="text-3xl mb-2 font-semibold leading-normal text-white dark:text-white">
             درباره  من
           </h3>
-          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700 dark:text-white">
-            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار در حوزه های فرانت و بک اند و همچنین نگهداری دیتابیس‌ ها دارم  و دراینجا قصد دارم به مرور مواردی که کاربردی هستند و مورد علاقه خودم است را به تدریج منتشر نمایم که هم جنبه یادداشت شخصی دارد و اگر هم مورد استفاده همکاران و مخاطبین عزیز بشود باعث خوشحالی اینجانب می گردد.<br /> هر نوع همکاری و مشارکت در این زمینه باعث امتنان است و سورس کد این سایت در گیت هاب میباشد.
+          <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-500 dark:text-white">
+            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار دارم  و دراینجا قصد دارم به مرور مواردی که کاربردی هستند و مورد علاقه خودم است را به تدریج منتشر نمایم که هم جنبه یادداشت شخصی دارد و اگر هم مورد استفاده همکاران و مخاطبین عزیز بشود باعث خوشحالی اینجانب می گردد.<br /> هر نوع همکاری و مشارکت در این زمینه باعث امتنان است و سورس کد این سایت در گیت هاب میباشد.
           </p>
           <a
             href="https://github.com/aminsource/hoomanamini"
             target="__blank"
-            className="font-bold text-gray-800 dark:text-white mt-8"
+            className="font-bold text-blue-400 dark:text-white mt-8"
           >
             لینک سورس در گیت هاب
           </a>
@@ -159,7 +180,7 @@ const Services = () => (
         </div>
 
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto mt-5">
-          <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+          <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-indigo-200">
             <img
               alt="..."
               src="/assets/landing/fanap.jpg"
@@ -178,11 +199,11 @@ const Services = () => (
               >
                 <polygon
                   points="-30,95 583,95 583,65"
-                  className="text-pink-600 fill-current"
+                  className="text-indigo-200 fill-current"
                 ></polygon>
               </svg>
-              <h4 className="text-xl font-bold text-white">محل فعالیت من</h4>
-              <p className="text-md font-light mt-2 text-white">
+              <h4 className="text-xl font-bold text-gray-600">محل فعالیت من</h4>
+              <p className="text-md font-light mt-2 text-gray-600">
                 مجموعه فناپ - شرکت پرداخت الکترونیک پاسارگاد
               </p>
             </blockquote>
@@ -193,7 +214,7 @@ const Services = () => (
   </section>
 );
 
-const Featured = () => (
+const Favorite = () => (
   <section className="relative py-20">
     <div
       className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
@@ -226,18 +247,18 @@ const Featured = () => (
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div className="md:pr-12">
-            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mt-6 mb-6 shadow-lg rounded-full bg-pink-300">
+            <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mt-6 mb-6 shadow-lg rounded-full bg-indigo-200">
               <i className="fas fa-rocket text-xl"></i>
             </div>
             <h3 className="text-3xl font-semibold text-gray-600 dark:text-white">
               حوزه‌‌های مورد علاقه
             </h3>
             <ul className="list-none mt-6">
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fas fa-fingerprint"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-js-square"></i>
                     </span>
                   </div>
                   <div>
@@ -248,11 +269,11 @@ const Featured = () => (
                 </div>
               </li>
 
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fas fa-fingerprint"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-react"></i>
                     </span>
                   </div>
                   <div>
@@ -262,25 +283,25 @@ const Featured = () => (
                   </div>
                 </div>
               </li>
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fab fa-html5"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-python"></i>
                     </span>
                   </div>
                   <div>
                     <h4 className="text-gray-600 dark:text-white">
-                      پایتون
+                      پایتون و یادگیری ماشین
                     </h4>
                   </div>
                 </div>
               </li>
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fab fa-html5"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-android"></i>
                     </span>
                   </div>
                   <div>
@@ -291,11 +312,11 @@ const Featured = () => (
                 </div>
               </li>
 
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fab fa-html5"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-osi"></i>
                     </span>
                   </div>
                   <div>
@@ -306,16 +327,16 @@ const Featured = () => (
                 </div>
               </li>
 
-              <li className="py-2">
+              <li>
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 ml-3">
-                      <i className="fab fa-html5"></i>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fas fa-database"></i>
                     </span>
                   </div>
                   <div>
                     <h4 className="text-gray-600 dark:text-white">
-                      تجارت الکترونیک
+                      نگهداری و بهینه سازی اوراکل
                     </h4>
                   </div>
                 </div>

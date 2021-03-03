@@ -35,7 +35,17 @@ function Footer() {
               <div className="flex justify-evenly">
                 <div>
                   <a
-                    className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                    className="bg-green-400 text-white w-8 h-8  outline-none focus:outline-none mr-1 mb-1 p-3 rounded-md"
+                    href="https://api.whatsapp.com/send/?phone=989123049506&text&app_absent=0"
+                    target="_blank"
+                  >
+                    <i className="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+
+                <div>
+                  <a
+                    className="bg-blue-400 text-white w-8 h-8  outline-none focus:outline-none mr-1 mb-1 p-3 rounded-md"
                     href="https://twitter.com/HoomanAmini"
                     target="_blank"
                   >
@@ -44,7 +54,7 @@ function Footer() {
                 </div>
                 <div>
                   <a
-                    className="bg-red-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                    className="bg-red-500 text-white w-8 h-8  outline-none focus:outline-none mr-1 mb-1 p-3 rounded-md"
                     href="https://www.youtube.com/c/hoomanamini"
                     target="_blank"
                   >
@@ -53,7 +63,7 @@ function Footer() {
                 </div>
                 <div>
                   <a
-                    className="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 p-3"
+                    className="bg-black text-white w-8 h-8 outline-none focus:outline-none mr-1 mb-1 p-3 rounded-md"
                     href="https://github.com/aminsource"
                     target="_blank"
                   >

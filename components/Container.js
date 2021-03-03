@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
+import { motion } from "framer-motion"
 
 import Footer from '@/components/Footer';
 
@@ -14,11 +15,15 @@ export default function Container({ children }) {
   return (
     <div className="bg-white dark:bg-black">
       <nav className="flex justify-between items-center max-w-4xl w-full my-0 md:my-8 mx-auto bg-white dark:bg-black bg-opacity-60 px-8 py-2">
-        <div>
+        <motion.div initial={{ y: -250 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+          className="bg-gradient-to-r from-indigo-300 to-blue-500  p-2 rounded-md"
+        >
           <NextLink href="/">
-            <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">هومن امینی</a>
+            <a className="p-1 sm:p-4 text-white dark:text-gray-100 font-bold">هومن امینی</a>
           </NextLink>
-        </div>
+        </motion.div>
         <button
           aria-label="Toggle Dark Mode"
           type="button"
