@@ -23,10 +23,7 @@ export default function Snippets({ snippets }) {
           تکه کد ها
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          These are a collection of code snippets I've used in the past and
-          saved. Some are Serverless Functions, which include set up
-          instructions. Others are anything from random CSS snippets to Node.js
-          scripts.
+          شرح کدها
         </p>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
           {snippets.map((snippet) => (

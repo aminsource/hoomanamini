@@ -1,0 +1,33 @@
+---
+title: 'پایتون'
+description: 'نکات و ترفندهای پایتون'
+logo: 'python.png'
+---
+
+----
+
+##### Functions are first-class citizens in Python
+
+#### توابع می توانند به عنوان آرگومان به فانکش های دیگر ارسال بشوند و یا به عنوان مقدار از فانکشن های دیگر برگردانده شوند و همچنین می توانند به یک متغییر تخصیص داده شوند و در ساختارهای داده ذخیره شوند
+
+
+
+<div dir="ltr">
+
+
+```python
+
+def myFunc(a, b):
+     return a + b
+
+func = [myFunc]
+
+print(func[0])  # <function myFunc at 0x7ff9d4593dc0>
+
+print(func[0](2, 3)) # 5
+
+```
+
+</div>
+
+----
