@@ -23,27 +23,34 @@ image: ''
 <div dir="ltr">
 
 ```javascript
-if (!Promise.prototype.finally) {
-  Promise.prototype.finally = function f(fn) {
-    return this.then(
-      function t(v) {
-        return Promise.resolve(fn()).then(function t() {
-          return v;
-        });
-      },
-      function c(e) {
-        return Promise.resolve(fn()).then(function t() {
-          throw e;
-        });
-      }
-    );
-  };
+{
+  todos:[{
+    text:'پرداخت قبض',
+    completed :true
+  },{
+    text:'خرید خانه',
+    completed :false
+  }
+  ]
 }
+```
+</div>
+
+اما اپلیکیشن شما نمی توانند مستقیم این State ها را تغییر بدهند و برای تغییر آن باید یک عملگر ارسال کنید و یا به عبارتی جهت تغییر باید یک Action ارسال یا dispatch نمایند و اکشن هم چیزی نیست جز یک آبجکت ساده مانند آبجکت های زیر که هر کدام آنها یک Action هستند:
+
+<div dir="ltr">
+
+```javascript
+
+{type:"ADD_TODO",text:"GO to swimming pool"}
+{type:"TOGGLE_TODO",index:1}
+{type:"SET_VISIBILITY_FILTER",filter:"SHOW_ALL"}
+
 ```
 
 </div>
 
-اما اپلیکیشن شما نمی توانند مستقیم این State ها را تغییر بدهند و برای تغییر آن باید یک عملگر ارسال کنید و یا به عبارتی جهت تغییر باید یک Action ارسال یا dispatch نمایند و اکشن هم چیزی نیست جز یک آبجکت ساده مانند آبجکت های زیر که هر کدام آنها یک Action هستند:
+
 
 
 خوب ما تا اینجا state داریم و اکشن های مورد نیاز جهت تغییر state ها، مانند شکل فوق به عنوان مثال اکشن اضافه کردن یک todo یا تغییر حالت todo.
@@ -53,7 +60,31 @@ if (!Promise.prototype.finally) {
 به عنوان مثال فانکشن reducer جهت تغییر todo ها می تواند به شکل زیر باشد.
 
 
-به صورت تصویری به مثال زیر توجه فرمایید
+<div dir="ltr">
+
+```javascript
+
+function todo(state=[],action){
+  swith (action.type){
+    case "ADD_TODO":
+      return state.concat([{text,action,completed:false}])
+    case "TOGGLE_TODO":
+      return state.map((todo,index))=>
+        action.index === index
+          ? {text:todo.text,completed:!todo.completed}  
+          : todo
+    )
+    default:
+      return state
+  }
+}
+
+```
+
+</div>
+
+
+به صورت تصویری به مثال شکل اول گفتار  توجه فرمایید
 
 
 در مثال فوق
