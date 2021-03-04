@@ -101,7 +101,7 @@ const Services = () => (
                   فیلم های آموزشی
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600 ">
-                  فیلم های آموزشی ارایه شده
+                  فیلم های آموزشی ارائه شده
                 </p>
               </div>
             </div>
@@ -144,7 +144,7 @@ const Services = () => (
                   تکه کدها
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600">
-                  کد های قابل استفاده مجدد
+                  ترفندهای پرکاربرد زبان ها، کتابخانه‌ها و ابزارها
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ const Services = () => (
 
       <div className="flex flex-wrap items-center mt-32">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-          <div className="text-gray-600 p-1 text-center inline-flex items-center justify-center w-30 h-30 mb-6 shadow-lg bg-gray-100">
+          <div className="text-gray-600 p-2 text-center inline-flex items-center justify-center w-30 h-30 mb-6 shadow-lg bg-gray-100  rounded-xl" >
             {/* <i className="fas fa-user-friends text-xl"></i> */}
             <img
               alt="..."
