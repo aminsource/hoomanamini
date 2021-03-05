@@ -30,13 +30,13 @@ const Hero = () => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center"
     style={{
-      minHeight: '50vh'
+      minHeight: '60vh'
     }}
   >
     <div
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
-        backgroundImage: "url('/assets/landing/bg.png')"
+        backgroundImage: "url('/assets/landing/bg.jpg')"
       }}
     >
       <span
@@ -52,7 +52,7 @@ const Hero = () => (
             <motion.p className="mt-8 text-2xl text-gray-300 leading-loose" initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}>
-              هدف از این وب سایت یادداشت‌های تخصصی و محتواهای آموزشی  <br />در رابطه با مهندسی و تولید نرم افزار، <br />خصوصاً مهارت ها و ترفندهای حوزه توسعه وب می‌باشد.
+              هدف از این وب سایت ارائه مهارت ها، ترفندها و راه حل ها  <br />در رابطه با تولید نرم افزار متن باز <br />خصوصاً حوزه وب می‌باشد.
             </motion.p>
 
           </div>
@@ -151,6 +151,73 @@ const Services = () => (
           </Link>
         </motion.div>
       </div>
+      <div className="flex flex-wrap">
+
+        <motion.div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center  transform -rotate-6 "
+          whileHover={{ scale: 1.03, originX: 0, rotate: 6 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
+          {/* <a href="" target="__blank"> */}
+          <div className="relative flex flex-col min-w-0 break-words bg-yellow-200 dark:bg-black w-full mb-8 shadow-lg rounded-lg">
+            <div className="px-4 py-5 flex-auto"
+            >
+              <div className="text-white  text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-300">
+                <i className="fas fa-drafting-compass"></i>
+              </div>
+              <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
+                راه حل
+                </h6>
+              <p className="mt-2 mb-4 text-gray-600 ">
+                برگزاری ایونت ها و سمینارهای مجازی
+                </p>
+            </div>
+          </div>
+          {/* </a> */}
+        </motion.div>
+
+        <motion.div className="w-full md:w-4/12 px-4 text-center  transform rotate-6"
+          whileHover={{ scale: 1.03, originX: 0, rotate: -6 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
+          <a href="http://rdyaab.hoomanamini.ir/" target="__blank">
+            <div className="relative flex flex-col min-w-0 break-words bg-yellow-200 dark:text-white dark:bg-black  w-full mb-8 shadow-lg rounded-lg">
+              <div className="px-4 py-5 flex-auto border-purple-900">
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-300">
+                  <i className="fas fa-drafting-compass"></i>
+                </div>
+                <h6 className="text-gray-600 dark:text-white text-xl font-semibold">
+                  راه حل
+                </h6>
+                <p className="mt-2 mb-4 text-gray-600 ">
+                  مانیتور و آنالیز وب سایت شما
+                </p>
+              </div>
+            </div>
+          </a>
+        </motion.div>
+
+        <motion.div className="wlg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center  transform rotate-6"
+          whileHover={{ scale: 1.03, originX: 0, rotate: -6 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
+          {/* <Link href=""> */}
+          <div className="relative flex flex-col min-w-0 break-words bg-green-200 dark:text-white dark:bg-black  w-full mb-8 shadow-lg rounded-lg">
+            <div className="px-4 py-5 flex-auto border-purple-900">
+              <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-300">
+                <i className="fas fa-drafting-compass"></i>
+              </div>
+              <h6 className="text-gray-600 dark:text-white text-xl font-semibold">
+                راه حل
+                </h6>
+              <p className="mt-2 mb-4 text-gray-600 ">
+                تجارت الکترونیک و فروشگاه اینترنتی
+                </p>
+            </div>
+          </div>
+          {/* </Link> */}
+        </motion.div>
+
+      </div>
 
       <div className="flex flex-wrap items-center mt-32">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
@@ -167,14 +234,14 @@ const Services = () => (
             درباره  من
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-500 dark:text-white">
-            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار دارم  و دراینجا قصد دارم به مرور مواردی که کاربردی هستند و مورد علاقه خودم است را به تدریج منتشر نمایم که هم جنبه یادداشت شخصی دارد و اگر هم مورد استفاده همکاران و مخاطبین عزیز بشود باعث خوشحالی اینجانب می گردد.<br /> هر نوع همکاری و مشارکت در این زمینه باعث امتنان است و سورس کد این سایت در گیت هاب میباشد.
+            بنده حدوده ۲۰ سال تجربه تولید و توسعه نرم افزار دارم  و دراینجا قصد دارم به مرور موارد و راه‌حل‌هایی که کاربردی هستند و مورد علاقه خودم است را به تدریج منتشر نمایم که هم جنبه یادداشت شخصی دارد و اگر هم مورد استفاده همکاران و مخاطبین عزیز بشود باعث خوشحالی می گردد.<br /> هر نوع همکاری و مشارکت در این زمینه باعث امتنان است.
           </p>
           <a
             href="https://github.com/aminsource/hoomanamini"
             target="__blank"
-            className="font-bold text-blue-400 dark:text-white mt-8"
+            className="text-blue-400 dark:text-white mt-8"
           >
-            لینک سورس در گیت هاب
+            لینک سورس سایت در گیت هاب
           </a>
 
         </div>
@@ -211,7 +278,7 @@ const Services = () => (
         </div>
       </div>
     </div>
-  </section>
+  </section >
 );
 
 const Favorite = () => (
@@ -283,6 +350,36 @@ const Favorite = () => (
                   </div>
                 </div>
               </li>
+
+              <li>
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fab fa-osi"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600 dark:text-white">
+                      مشارکت در پروژه‌های متن باز
+                    </h4>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div className="flex items-center">
+                  <div>
+                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
+                      <i className="fas fa-database"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="text-gray-600 dark:text-white">
+                      نگهداری و بهینه سازی اوراکل
+                    </h4>
+                  </div>
+                </div>
+              </li>
               <li>
                 <div className="flex items-center">
                   <div>
@@ -307,36 +404,6 @@ const Favorite = () => (
                   <div>
                     <h4 className="text-gray-600 dark:text-white">
                       توسعه اپلیکیشن های اندروید
-                    </h4>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="flex items-center">
-                  <div>
-                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
-                      <i className="fab fa-osi"></i>
-                    </span>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-600 dark:text-white">
-                      مشارکت در پروژه‌های اوپن سورس
-                    </h4>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div className="flex items-center">
-                  <div>
-                    <span className="text-4xl inline-block p-1 uppercase  text-indigo-200  ml-3">
-                      <i className="fas fa-database"></i>
-                    </span>
-                  </div>
-                  <div>
-                    <h4 className="text-gray-600 dark:text-white">
-                      نگهداری و بهینه سازی اوراکل
                     </h4>
                   </div>
                 </div>
