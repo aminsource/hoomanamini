@@ -157,22 +157,22 @@ const Services = () => (
           whileHover={{ scale: 1.03, originX: 0, rotate: 6 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
-          {/* <a href="" target="__blank"> */}
-          <div className="relative flex flex-col min-w-0 break-words bg-yellow-200 dark:bg-black w-full mb-8 shadow-lg rounded-lg">
-            <div className="px-4 py-5 flex-auto"
-            >
-              <div className="text-white  text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-300">
-                <i className="fas fa-drafting-compass"></i>
-              </div>
-              <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
-                راه حل
+          <a href="https://event.hoomanamini.ir/" target="__blank">
+            <div className="relative flex flex-col min-w-0 break-words bg-yellow-200 dark:bg-black w-full mb-8 shadow-lg rounded-lg">
+              <div className="px-4 py-5 flex-auto"
+              >
+                <div className="text-white  text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-300">
+                  <i className="fas fa-drafting-compass"></i>
+                </div>
+                <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
+                  راه حل
                 </h6>
-              <p className="mt-2 mb-4 text-gray-600 ">
-                برگزاری ایونت ها و سمینارهای مجازی
+                <p className="mt-2 mb-4 text-gray-600 ">
+                  برگزاری رویداد و سمینارهای مجازی
                 </p>
+              </div>
             </div>
-          </div>
-          {/* </a> */}
+          </a>
         </motion.div>
 
         <motion.div className="w-full md:w-4/12 px-4 text-center  transform rotate-6"
