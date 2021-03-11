@@ -7,23 +7,13 @@ export default function Home() {
     <Container>
       <Hero />
       <Services />
+      {/* <Solutions /> */}
+      <AboutMe />
       <Favorite />
       {/* <Finisher /> */}
     </Container>
   );
 }
-const nameVariants = {
-  hidden: {
-    opacity: 0,
-    x: '100'
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { type: 'spring', delay: 0.5 }
-  },
-};
-
 
 /// Page Sections
 const Hero = () => (
@@ -151,8 +141,14 @@ const Services = () => (
           </Link>
         </motion.div>
       </div>
-      <div className="flex flex-wrap">
+    </div>
+  </section >
+);
 
+const Solutions = () => (
+  <section className="pb-20 dark:bg-black bg-yellow-400 -mt-24">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap">
         <motion.div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center  transform -rotate-6 "
           whileHover={{ scale: 1.03, originX: 0, rotate: 6 }}
           transition={{ type: 'spring', stiffness: 300 }}
@@ -219,6 +215,13 @@ const Services = () => (
 
       </div>
 
+    </div>
+  </section >
+);
+
+const AboutMe = () => (
+  <section className="pb-20 dark:bg-black bg-yellow-400 -mt-24">
+    <div className="container mx-auto px-4">
       <div className="flex flex-wrap items-center mt-32">
         <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
           <div className="text-gray-600 p-2 text-center inline-flex items-center justify-center w-30 h-30 mb-6 shadow-lg bg-gray-100  rounded-xl" >
@@ -280,6 +283,7 @@ const Services = () => (
     </div>
   </section >
 );
+
 
 const Favorite = () => (
   <section className="relative py-20">
