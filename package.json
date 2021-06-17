@@ -1,11 +1,11 @@
 {
-  "name": "manakit.ir",
+  "name": "hoomanamini.ir",
   "description": "My personal website.",
   "version": "0.0.0",
   "author": {
-    "name": "مانا کیت",
-    "email": "me@manakit.ir",
-    "url": "https://manakit.ir"
+    "name": "هومن امینی",
+    "email": "amini.hooman@gmail.com",
+    "url": "https://hoomanamini.ir"
   },
   "license": "MIT",
   "repository": {
