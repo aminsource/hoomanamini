@@ -7,7 +7,7 @@ function topics() {
         <Container>
             <div className="flex flex-col justify-center items-start mb-16 p-4">
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
-                    <Link href={`/snippets`}>
+                    <Link href="/javascripts">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
@@ -24,7 +24,7 @@ function topics() {
                             <p className="mt-1 text-gray-700 dark:text-gray-400">نکات و ترفندها</p>
                         </a>
                     </Link>
-                    <Link href={`/snippets`}>
+                    <Link href="/reactjs">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
@@ -41,7 +41,7 @@ function topics() {
                             <p className="mt-1 text-gray-700 dark:text-gray-400">نکات و ترفندها</p>
                         </a>
                     </Link>
-                    <Link href={`/snippets`}>
+                    <Link href="/typescripts">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
@@ -58,12 +58,12 @@ function topics() {
                             <p className="mt-1 text-gray-700 dark:text-gray-400">نکات و ترفندها</p>
                         </a>
                     </Link>
-                    <Link href={`/snippets`}>
+                    <Link href="/htmlcss">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
                             <Image
-                                alt="جاوااسکریپت"
+                                alt="اچ تی ام ال و سی اس اس"
                                 height={52}
                                 width={52}
                                 src="/logos/htmlcss.jpg"
@@ -75,7 +75,7 @@ function topics() {
                             <p className="mt-1 text-gray-700 dark:text-gray-400">نکات و ترفندها</p>
                         </a>
                     </Link>
-                    <Link href={`/snippets`}>
+                    <Link href="/python">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
@@ -92,7 +92,7 @@ function topics() {
                             <p className="mt-1 text-gray-700 dark:text-gray-400">نکات و ترفندها</p>
                         </a>
                     </Link>
-                    <Link href={`/snippets`}>
+                    <Link href="/oracle">
                         <a
                             className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full text-center"
                         >
