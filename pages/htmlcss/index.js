@@ -39,7 +39,7 @@ export default function Snippets({ snippets }) {
 }
 
 export async function getStaticProps() {
-  const snippets = await getAllFilesFrontMatter('javascripts');
+  const snippets = await getAllFilesFrontMatter('htmlcss');
 
   return { props: { snippets } };
 }
