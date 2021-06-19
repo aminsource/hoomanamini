@@ -6,10 +6,11 @@ export default function FunctionCard({
   description,
   slug,
   logo,
+  type,
   ...rest
 }) {
   return (
-    <Link href={`/snippets/${slug}`}>
+    <Link href={`/${type}/${slug}`}>
       <a
         className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full"
         {...rest}

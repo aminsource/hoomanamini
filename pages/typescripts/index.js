@@ -30,6 +30,7 @@ export default function Snippets({ snippets }) {
               slug={snippet.slug}
               logo={snippet.logo}
               description={snippet.description}
+              type="typescripts"
             />
           ))}
         </div>

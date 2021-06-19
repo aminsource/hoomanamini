@@ -13,10 +13,10 @@ export default function Snippet({ mdxSource, frontMatter }) {
 }
 
 export async function getStaticPaths() {
-  const snippets = await getFiles('snippets');
+  const javascripts = await getFiles('javascripts');
 
   return {
-    paths: snippets.map((s) => ({
+    paths: javascripts.map((s) => ({
       params: {
         slug: s.replace(/\.mdx/, '')
       }
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const snippet = await getFileBySlug('snippets', params.slug);
+  const snippet = await getFileBySlug('javascripts', params.slug);
 
   return { props: snippet };
 }
