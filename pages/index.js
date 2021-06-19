@@ -42,7 +42,7 @@ const Hero = () => (
             <motion.p className="mt-8 text-2xl text-gray-300 leading-loose" initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}>
-              هدف از این وب سایت ارائه مهارت ها، ترفندها و راه حل ها  <br />در رابطه با تولید نرم افزار متن باز <br />خصوصاً حوزه وب می‌باشد.
+              هدف از این وب سایت ارائه مهارت، ترفند و راه حل های  <br />تولید و توسعه نرم افزار، <br />خصوصاً حوزه وب می‌باشد.
             </motion.p>
 
           </div>
@@ -124,17 +124,17 @@ const Services = () => (
           whileHover={{ scale: 1.03, originX: 0 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
-          <Link href="/snippets">
+          <Link href="/topics">
             <div className="relative flex flex-col min-w-0 break-words bg-white dark:bg-black w-full mb-8 shadow-lg rounded-lg ">
               <div className="px-4 py-5 flex-auto">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-indigo-300">
                   <i className="fas fa-code"></i>
                 </div>
                 <h6 className="text-xl font-semibold text-gray-600 dark:text-white">
-                  تکه کدها
+                  ترفندها و مهارت ‌ها
                 </h6>
                 <p className="mt-2 mb-4 text-gray-600">
-                  ترفندهای پرکاربرد زبان ها، کتابخانه‌ها و ابزارها
+                  ترفندهای و تکه کدهای پرکاربرد زبان ها، کتابخانه‌ها و ابزارها
                 </p>
               </div>
             </div>
@@ -204,10 +204,10 @@ const Solutions = () => (
               </div>
               <h6 className="text-gray-600 dark:text-white text-xl font-semibold">
                 راه حل
-                </h6>
+              </h6>
               <p className="mt-2 mb-4 text-gray-600 ">
                 تجارت الکترونیک و فروشگاه اینترنتی
-                </p>
+              </p>
             </div>
           </div>
           {/* </Link> */}

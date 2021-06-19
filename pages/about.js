@@ -39,11 +39,11 @@ export default function About() {
   return (
     <Container>
       <NextSeo
-        title="About Me – مانا کیت"
+        title="About Me – هومن امینی"
         canonical="https://manakit.ir/about"
         openGraph={{
           url: 'https://manakit.ir/about',
-          title: 'About Me – مانا کیت'
+          title: 'About Me – هومن امینی'
         }}
       />
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">

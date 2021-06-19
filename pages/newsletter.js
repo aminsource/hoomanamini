@@ -6,7 +6,7 @@ import NewsletterLink from '@/components/NewsletterLink';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 const url = 'https://manakit.ir/newsletter';
-const title = 'Newsletter – مانا کیت';
+const title = 'Newsletter – هومن امینی';
 const description =
   'Thoughts on the software industry, programming, tech, videography, music, and my personal life.';
 

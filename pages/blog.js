@@ -6,7 +6,7 @@ import BlogPost from '@/components/BlogPost';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 
 const url = 'https://manakit.ir/blog';
-const title = 'Blog – مانا کیت';
+const title = 'Blog – هومن امینی';
 const description =
   'ارائه گفتارها و مطالب آموزشی در رابطه با توسعه فرانت اند وب و ابزارهای بکار گرفته شده در مانا ';
 

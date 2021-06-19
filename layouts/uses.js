@@ -6,12 +6,12 @@ export default function UsesLayout({ children }) {
   return (
     <Container>
       <NextSeo
-        title="Uses – مانا کیت"
+        title="Uses – هومن امینی"
         description={`Here's what tech I'm currently using for coding, videos, and music.`}
         canonical="https://manakit.ir/uses"
         openGraph={{
           url: 'https://manakit.ir/uses',
-          title: 'Uses – مانا کیت',
+          title: 'Uses – هومن امینی',
           description: `Here's what tech I'm currently using for coding, videos, and music.`
         }}
       />
