@@ -1,20 +1,61 @@
 ---
-title: 'حلقه ها و reduce آرایه ها و زنجیر کردن متد'
-description: 'نکات و ترفندهای'
+title: 'راه های مختلف پیمودن و تغییر شکل آرایه ها '
+description: 'JavaScript, Array, Object, Iterator'
 logo: 'javascript.png'
 ---
 
 
-#### حلقه
+#### روش اول: با استفاده از  For loops
 
 <div dir="ltr">
 
 ```javascript
-const files = ['foo.txt', '.bar', 'baz.foo'];
+const files = [ 'foo.txt ', '.bar', '   ', 'baz.foo' ];
+let filePaths = [];
 
-for( let file of files){
-    console.log(file) //'foo.txt', '.bar', 'baz.foo'
+for (let file of files) {
+  const fileName = file.trim();
+  if(fileName) {
+    const filePath = `~/cool_app/${fileName}`;
+    filePaths.push(filePath);
+  }
 }
+// filePaths = [ '~/cool_app/foo.txt', '~/cool_app/.bar', '~/cool_app/baz.foo']
 
+```
+</div>
+
+#### روش دوم با استفاده از Array reduce
+
+<div dir="ltr">
+
+```javascript
+const files = [ 'foo.txt ', '.bar', '   ', 'baz.foo' ];
+const filePaths = files.reduce((acc, file) => {
+  const fileName = file.trim();
+  if(fileName) {
+    const filePath = `~/cool_app/${fileName}`;
+    acc.push(filePath);
+  }
+  return acc;
+}, []);
+
+// filePaths = [ '~/cool_app/foo.txt', '~/cool_app/.bar', '~/cool_app/baz.foo']
+```
+</div>
+
+
+#### روش سوم با استفاده از Method chaining
+
+<div dir="ltr">
+
+```javascript
+const files = [ 'foo.txt ', '.bar', '   ', 'baz.foo' ];
+const filePaths = files
+  .map(file => file.trim())
+  .filter(Boolean)
+  .map(fileName => `~/cool_app/${fileName}`);
+
+// filePaths = [ '~/cool_app/foo.txt', '~/cool_app/.bar', '~/cool_app/baz.foo']
 ```
 </div>
