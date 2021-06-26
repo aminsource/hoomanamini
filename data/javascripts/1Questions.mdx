@@ -1,0 +1,154 @@
+---
+title: 'سئوال‌ها و نکات کوتاه در جاوااسکریپت'
+description: 'سئوال و جواب'
+logo: 'javascript.png'
+---
+
+
+#### تفاوت undefined , not defined در جاوا اسکریپت چیست؟
+
+<details><summary><b>جواب</b></summary>
+
+در جاوااسکریپت اگر بخواهیم از متغیر که وجود ندارد و تعریف نشده است استفاد کنیم، خطای var name is not defined دریافت می کنیم.
+که در این حالت می گوییم متغییر تعریف نشده است یا  not defiend است.
+
+مانند مثال زیر
+
+<div dir="ltr">
+
+```javascript
+
+console.log(y);  // Output: ReferenceError: y is not defined
+
+```
+</div>
+
+اما ممکن است متعییر تعریف شده باشد و مقدار دهی نشده باشد که در این حالت undefined است
+
+ مانند مثال زیر:
+
+<div dir="ltr">
+
+```javascript
+var x; // declaring x
+console.log(x); // output: undefined
+
+```
+</div>
+
+</details>
+
+### کلوژر در جاوااسکریپت چیست؟
+
+<details><summary><b>جواب</b></summary>
+به لینک زیر مراجعه فرمایید.
+ [لینک گفتار](https://hoomanamini.ir/blog/Closure)
+
+</details>
+
+### یک فانکشن بنویسید که وقتی آن را به صورت زیر صدا می نمایید نتیجه مشخص شده را بر گرداند.
+
+<div dir="ltr">
+
+```javascript
+console.log(mul(2)(3)(4)); // output : 24
+```
+</div> 
+
+<details><summary><b>جواب</b></summary>
+
+
+<div dir="ltr">
+
+```javascript
+
+function mul(x) { 
+     return function (y) {
+              return function (z) {
+                               return x * y * z
+    }
+  }
+}
+
+```
+</div> 
+
+فانکشن فوق را می‌توانیم به صورت ساده تر زیر صدا بزنیم
+
+<div dir="ltr">
+
+```javascript
+const first = mul(2); 
+const second = first(3);
+const third = second(4);
+console.log(third);   // 24
+
+```
+</div> 
+
+همانطور که در عبارات فوق می بینیم در خط اول یک instance از اولین فانکشن داخلی را بر می گرداند که برروی   متغیر x بسته شده است یا بیاد میاورد و در خط دوم با اجرای فانکشن بدست آمده از خط یک با متغیر y یک instance از فانکشن داخلی دوم برگردانده می شود و با اجرای آن فانکشن در خط سه با متغییر z سه متغیر ارسالی که کلوژر شده بودند در هم ضرب  می گردد و نتیجه برگردانده می شود.
+
+</details>
+
+
+### چگونه یک آرایه را در جی اس خالی نماییم؟
+
+<details><summary><b>جواب</b></summary>
+
+می توانیم به صورت ساده زیر عمل نماییم.
+
+<div dir="ltr">
+
+```javascript
+
+arrayList = []
+
+```
+</div>
+
+
+در این روش توجه داشت باشید که ریفرنس به آرایه را به یک آرایه جدید اشاره داده‌ایم ([]) و اگر کد زیر را داشته باشیم.
+
+<div dir="ltr">
+
+```javascript
+
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+arrayList = []; // Empty the array
+console.log(anotherArrayList); // Output ['a', 'b', 'c', 'd', 'e', 'f']
+
+
+```
+
+</div>
+
+همانطور که در کد فوق می بینیم اگر قبل از اینکه ریفرنس جدید ایجاد کنیم ریفرنس دیگری به آرایه قبلی ایجاد کرده باشیم ریفرنس قبلی به آرایه قدیم باقی خواهد ماند
+
+لذا بهتر است به روش های جایگزین زیر آرایه مد نظر را خالی نماییم
+
+<div dir="ltr">
+
+```javascript
+
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+arrayList.length = 0; // Empty the array by setting length to 0
+console.log(anotherArrayList); // Output []
+
+
+var arrayList = ['a', 'b', 'c', 'd', 'e', 'f']; // Created array
+var anotherArrayList = arrayList;  // Referenced arrayList by another variable
+arrayList.splice(0, arrayList.length); // Empty the array by setting length to 0
+console.log(anotherArrayList); // Output []
+
+
+while (arrayList.length) {
+    arrayList.pop();
+}
+
+
+```
+</div>
+
+</details>
